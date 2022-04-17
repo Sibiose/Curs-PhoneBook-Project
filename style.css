@@ -1,0 +1,239 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: beige;
+}
+.app-title {
+  font-size: 2rem;
+  color: black;
+  margin: 2rem;
+}
+
+#phone {
+  position: relative;
+  width: 450px;
+  height: 700px;
+  background-color: white;
+  border-radius: 25px;
+  border: black 2px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+#contact-list {
+  text-align: center;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-item {
+  font-size: 1.2rem;
+  list-style: none;
+  font-weight: 600;
+  width: 95%;
+  box-shadow: 1px 1px 10px;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin: 0.5rem 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-item:hover {
+  box-shadow: 3px 3px 10px gray;
+  cursor: pointer;
+  color: rgba(255, 83, 73, 0.9);
+}
+
+.contacts-title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-icon {
+  width: 2rem;
+  cursor: pointer;
+}
+.contact-icon:hover {
+  filter: invert(55%) sepia(77%) saturate(4163%) hue-rotate(331deg)
+    brightness(101%) contrast(110%);
+}
+.edit-icon {
+  width: 1.5rem;
+}
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+.panel-icon {
+  width: 3rem;
+}
+.panel-icon:hover {
+  filter: invert(55%) sepia(77%) saturate(4163%) hue-rotate(331deg)
+    brightness(101%) contrast(110%);
+}
+
+.btn {
+  background-color: white;
+  border: none;
+  margin: 1rem 2rem;
+  cursor: pointer;
+}
+.buttons-container {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  border-top: 0.3px solid gray;
+}
+.add-icon {
+  width: 3.5rem;
+}
+
+/* Add MODAL*/
+
+.add-modal {
+  position: absolute;
+  width: 400px;
+  height: 550px;
+  background-color: white;
+  border-radius: 25px;
+  border: black 1px solid;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  padding: 2rem;
+}
+
+.add-modal-title {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+.modal-add-name-input {
+  padding: 0.8rem 0rem;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid gray;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.modal-add-phone-input {
+  padding: 0.8rem 0rem;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid gray;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.submit-contact-btn {
+  padding: 1rem;
+  width: 10rem;
+  background-color: orangered;
+  border: none;
+  border-radius: 15px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  margin-top: 4rem;
+}
+.submit-contact-btn:hover {
+  opacity: 0.8;
+}
+.error-message {
+  color: red;
+}
+
+/* Edit MODAL*/
+
+.edit-modal {
+  position: absolute;
+  width: 400px;
+  height: 550px;
+  background-color: white;
+  border-radius: 25px;
+  border: black 1px solid;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  padding: 2rem;
+}
+
+.edit-modal-title {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+.modal-edit-name-input {
+  padding: 0.8rem 0rem;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid gray;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.modal-edit-phone-input {
+  padding: 0.8rem 0rem;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid gray;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.submit-edit-btn {
+  padding: 1rem;
+  width: 10rem;
+  background-color: orangered;
+  border: none;
+  border-radius: 15px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  margin-top: 4rem;
+}
+.submit-edit-btn:hover {
+  opacity: 0.8;
+}
+
+.edit-error-message {
+  color: red;
+}
+
+.hide {
+  display: none;
+}
+.search-bar {
+  padding: 0.8rem 0rem;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid gray;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.3rem;
+  color: black;
+}
+.search-bar:focus,
+.modal-add-name-input:focus,
+.modal-add-phone-input:focus,
+.modal-edit-name-input:focus,
+.modal-edit-phone-input:focus {
+  outline-color: orangered;
+}

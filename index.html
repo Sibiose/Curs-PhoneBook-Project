@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Book Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="app-title">Phone Book Project</h1>
+    <div id="phone">
+      <h3 class="contacts-title">Contacts</h3>
+      <input
+        type="text"
+        class="search-bar"
+        placeholder="Search for a contact"
+      />
+      <ul id="contact-list"></ul>
+      <div class="buttons-container">
+        <button class="back-btn btn">
+          <img src="./images/back-icon.svg" alt="" class="panel-icon" />
+        </button>
+        <button class="add-btn btn">
+          <img src="./images/add-icon.svg" alt="" class="panel-icon add-icon" />
+        </button>
+        <button class="github-btn btn">
+          <img src="./images/github-icon.svg" alt="" class="panel-icon" />
+        </button>
+      </div>
+      <!-- ============= Modals ================-->
+      <div class="add-modal hide">
+        <h3 class="add-modal-title">Add a new Contact</h3>
+        <input
+          type="text"
+          class="modal-add-name-input"
+          placeholder="Insert a name"
+          maxlength="15"
+        />
+        <input
+          type="text"
+          class="modal-add-phone-input"
+          placeholder="Insert a phone number"
+          maxlength="10"
+        />
+        <p class="error-message hide">A avut loc o eroare</p>
+        <button class="submit-contact-btn">SUBMIT</button>
+      </div>
+      <!-- ============= Contact Edit Modal ================-->
+      <div class="edit-modal hide">
+        <h3 class="edit-modal-title">Contact</h3>
+        <input
+          type="text"
+          class="modal-edit-name-input"
+          placeholder="Insert a name"
+          maxlength="15"
+        />
+        <input
+          type="text"
+          class="modal-edit-phone-input"
+          placeholder="Insert a phone number"
+          maxlength="10"
+        />
+        <p class="edit-error-message hide">A avut loc o eroare</p>
+        <button class="submit-edit-btn">EDIT</button>
+      </div>
+    </div>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
