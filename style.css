@@ -237,3 +237,19 @@ body {
 .modal-edit-phone-input:focus {
   outline-color: orangered;
 }
+
+@media (max-width: 500px) {
+  #phone {
+    width: 95%;
+    padding: 2rem 0.5rem;
+  }
+  .add-modal {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .edit-modal {
+    width: 95%;
+    padding: 1rem;
+  }
+}
