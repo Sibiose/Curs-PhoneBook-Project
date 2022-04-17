@@ -1,5 +1,5 @@
-import ContactsApp from "./contacts-App.js";
 import PhoneTools from "./phone-tools.js";
+import ContactsApp from "./contacts-App.js";
 import Device from "./Device-DOM.js";
 
 export { PhoneContactsApp };
