@@ -1,4 +1,4 @@
-import ContactsApp from "./Contacts-App.js";
+import ContactsApp from "./contacts-App.js";
 import PhoneTools from "./phone-tools.js";
 import Device from "./Device-DOM.js";
 
