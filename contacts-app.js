@@ -1,4 +1,4 @@
-import Contact from "./Contact-class.js";
+import Contact from "./contact-class.js";
 /**
  * A class that holds Contacts and uses different methods in order to add, edit, remove, search new or existent contacts.
  */
